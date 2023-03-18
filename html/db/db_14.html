@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>紅藍點擊大 PK（一）</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-db/lessons/14/1"
+      ><h1>紅藍點擊大 PK（一）</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【說明】課程試玩</li>
+      <li>C.【講解】遊戲機制</li>
+      <li>D.【講解】房間ID產生</li>
+      <li>E.【講解】對方ID輸入</li>
+      <li>F.【講解】遊戲準備開始</li>
+      <li>G.【講解】遊戲開始</li>
+      <li>H.【講解】通知對方遊戲開始</li>
+      <li>I.【講解】按鍵偵測</li>
+      <li>J.【講解】圖片位置更新</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        學生可能在流程上會有問題，因此可以參照此圖作為解說基礎！<br />
+        而不論任何一方玩家，所執行的程式都是一樣的，但必須要有Ａ玩家創ID和B玩家輸入ID進入房間，因此利用按鈕和輸入房間ID
+        及 socket來執行流程！
+      </li>
+      <li>
+        所以A玩家按下按鈕產生ID->B玩家輸入房間ID並用socket.emit(‘ready’,id)傳遞給A->A玩家socket.on(‘ready’,id)
+        先判斷收到ID等於自己創建的ID並執行開始遊戲function以及用socket.emit(‘start’,id)告知B->B玩家socket.on(‘start’,id)判斷收到ID等於自己加入的ID則B再執行開始遊戲function!
+      </li>
+      <li>
+        此專案在遊戲開局時，雖有P1創建ID、P2加入房間ID
+        區分，但任何一方玩家在自己程式碼運行上都是P1，而對手都是P2，因此p1_count都是指當下自己的分數，而當每次keyup完呼叫push()，而push()加完自己的分數，又再呼叫update()，
+        在update()中我們利用diff來儲存自己p1_count與對手p2_count的分差，再透過
+        <code>$("body").css("background-position-x", `${diff+50}%`);</code>
+      </li>
+      <li>
+        去調整background罩子的位置去更新圖片唷！
+        （所以依照上述的更新圖片程式碼也可得知，在任何一方玩家
+        自己的遊戲畫面上都是為右邊紅色的角色，對手都是左邊藍色的角色）
+      </li>
+      <li>
+        ！！！而本課也尚未接收對手的p2_count，因此在demo上就只會更動自己的圖片！！！
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>

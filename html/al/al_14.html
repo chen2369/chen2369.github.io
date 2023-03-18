@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>加解密神器</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-al/lessons/14/1"
+      ><h1>加解密神器</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【試玩】課程試玩：加解密神器1</li>
+      <li>C.【講解】凱薩密碼加密</li>
+      <li>D.【講解】加密訊息的字串分析</li>
+      <li>E.【講解】非小寫字母不換置、位移超出範圍需遞補</li>
+      <li>F.【講解】凱薩密碼解密</li>
+      <li>G.【講解】對稱式密碼系統</li>
+      <li>H.【說明】遊戲介紹</li>
+      <li>I.【試玩】課程試玩：加解密神器2</li>
+      <li>J.【講解】XOR加密演算法1</li>
+      <li>K.【講解】XOR加密演算法2</li>
+      <li>L.【講解】非對稱加密</li>
+      <li>M.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        有幾個字大小寫比較容易拼錯，parseInt(拼對會是綠色)，indexOf、charCodeAt、fromCharCode(拼對會是藍色)。另外alphabet也注意一下別拼錯了。
+      </li>
+      <li>有些學生可能不記得%的意思只是照著抄，可以考一下他們。</li>
+    </ol>
+    <h2>延伸挑戰</h2>
+    <ol>
+      <li>
+        非小寫字母不換置、位移超出範圍需遞補
+        這一個影片前可以直接讓學生不看影片自己試著做做看標題的內容。
+      </li>
+      <li>
+        挑戰題：把凱薩加密專案的加密解密按鈕合併。
+        可以補充XOR在不使用暫存變數交換兩個變數的用途，與本課的XOR加解密十分相似。範例程式：
+        <pre>
+            var a1 = 100;
+            var a2 = 33;
+            console.log('a1 = ' + a1);
+            console.log('a2 = ' + a2);
+            a1 = a1 ^ a2;
+            a2 = a1 ^ a2;
+            a1 = a1 ^ a2;
+            console.log('a1 = ' + a1);
+            console.log('a2 = ' + a2);
+        </pre>
+      </li>
+    </ol>
+  </body>
+</html>

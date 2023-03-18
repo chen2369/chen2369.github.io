@@ -1,0 +1,31 @@
+body {
+    background: url("../source/bg.jpg") no-repeat fixed center rgba(0,0,0,0.6);
+    background-size: cover;
+    padding:20px 125px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 35px;
+}
+
+h2, li {
+    text-indent: 20px;
+}
+
+li {
+    list-style-type: decimal-leading-zero;
+}
+
+.tit img{
+    width: 99%;
+}
+
+.sb, .sa, .py, .js, .web, .db, .al {
+    background-color: rgba(255,255,255,0.6);
+    width: 33%;
+    /* padding-left: 20px; */
+    float: left;
+}
+
+.sbc, .sac, .pyc, .jsc ,.webc, .dbc, .alc {
+    color: DarkSlateBlue;
+}

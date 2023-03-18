@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>五子棋 AI</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-al/lessons/13/1"
+      ><h1>五子棋 AI</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【試玩】課程試玩</li>
+      <li>C.【講解】認識五子棋術語</li>
+      <li>D.【講解】介紹預設程式碼</li>
+      <li>E.【講解】顯示格子分數</li>
+      <li>F.【講解】計算連線分數</li>
+      <li>G.【講解】完成評估函式</li>
+      <li>H.【講解】貪婪模式</li>
+      <li>I.【講解】防守分數</li>
+      <li>J.【講解】讓電腦變得更聰明</li>
+      <li>K.【講解】玩家先攻</li>
+      <li>L.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>evaluate函式裡的座標+-要注意。</li>
+      <li>
+        寫AI函式會先把update函式的內容複製過去，複製之後可能又把該寫在AI函式的寫到update函式裡了。
+      </li>
+      <li>
+        AI函式最後一行grid[bestX][bestY] = 'b';漏掉的話執行起來電腦不會下新的棋
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+    <ol>
+      <li>其實要隱藏分數的話，註解掉最上面的forever(update)就好。</li>
+      <li>
+        延伸的話可以讓他們寫寫看隨機先後手：
+        <pre>
+        var bot = 'b';
+        var player = 'w';
+        if(Math.random() < 0.5){
+            grid[7][7] = bot;
+        }else{
+            bot = 'w';
+            player = 'b';
+        }
+        </pre>
+        這段加在最前面，然後後面原本'b'都改成bot、'w'都改成player。
+      </li>
+      <li>貪婪演算法挑大蘋果的解釋其實不太對（L12也是用相同的解釋）。</li>
+    </ol>
+  </body>
+</html>

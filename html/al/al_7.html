@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>路徑搜尋</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-al/lessons/7/1"
+      ><h1>路徑搜尋</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【試玩】課程試玩</li>
+      <li>C.【講解】廣度優先搜尋</li>
+      <li>D.【講解】探索地圖</li>
+      <li>E.【講解】停止搜尋</li>
+      <li>F.【講解】顯示箭頭</li>
+      <li>G.【講解】繪製道路</li>
+      <li>H.【講解】最佳優先搜尋</li>
+      <li>I.【講解】移動主角</li>
+      <li>J.【講解】實驗時間</li>
+      <li>K.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        比較會打錯~<br />
+        <code>
+          if (maze[x+1][y].color == "white") {<br />
+          maze[x+1][y].color = "red";<br />
+          maze[x+1][y].from = "left";<br />
+          arr.push(maze[x+1][y]);<br />
+          }<br />
+          if (maze[x-1][y].color == "white") {<br />
+          maze[x-1][y].color = "red";<br />
+          maze[x-1][y].from = "right";<br />
+          arr.push(maze[x-1][y]);<br />
+          }<br />
+          if (maze[x][y+1].color == "white") {<br />
+          maze[x][y+1].color = "red";<br />
+          maze[x][y+1].from = "up";<br />
+          arr.push(maze[x][y+1]);<br />
+          }<br />
+          if (maze[x][y-1].color == "white") {<br />
+          maze[x][y-1].color = "red";<br />
+          maze[x][y-1].from = "down";<br />
+          arr.push(maze[x][y-1]);<br />
+          }<br />
+          if (cell == end) {<br />
+          arr.length = 0;<br />
+          back = end;<br />
+          }
+        </code>
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>

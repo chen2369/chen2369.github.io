@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>寶可夢百科（一）</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-db/lessons/1/1"
+      ><h1>寶可夢百科（一）</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【小知識時間】認識資料庫</li>
+      <li>B.【說明】課程介紹</li>
+      <li>C.【說明】課程試玩</li>
+      <li>D.【講解】多筆資料儲存的方式</li>
+      <li>E.【講解】物件、屬性和方法</li>
+      <li>F.【講解】印出陣列中第一筆物件</li>
+      <li>G.【講解】透過程式印出假資料</li>
+      <li>H.【講解】認識字串模板</li>
+      <li>I.【講解】印出陣列中所有的資料</li>
+      <li>J.【講解】陣列的「方法」應用</li>
+      <li>K.【講解】發現問題</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        學生易錯、易問： 這課還沒開始使用資料庫！！<br />
+        而是專門在複習『物件』與『陣列』等知識點，因為之後會一直用到
+        <code
+          >&lt;td&gt;&lt;div class='icon
+          icon-${pokemons[i].index}'&gt;&lt;/div&gt;&lt;/td&gt;</code
+        ><br />
+        icon部分只要class加上對應的 icon-${pokemons[i].index} 就能出現圖片<br />
+        這部分在後台老師寫了一串指令，學生可以不用了解這部分如何實作，只要知道對應到就能出現，而底層的做法方向是<br />
+        class：icon 是用來切 40px 40px，剛好是大圖中一個角色的大小<br />
+        class：icon-id 是用來決定應該定位到大圖的哪個座標
+      </li>
+      <li>
+        問：為什麼剛剛儲存的資料不見了<br />
+        答：因為這堂課我們將資料並沒有存在資料庫中，從新整理後陣列就會重新初始化了
+      </li>
+      <li>
+        如何取得pokemons陣列中第一筆物件的name屬性？<br />
+        pokemons[0].name
+      </li>
+      <li>
+        多筆資料可以使用什麼來儲存?它可以使用哪四個方法在前後塞與吐值? <br />
+        陣列<br />
+        前：shift()、unshift() 後：pop()、push()
+      </li>
+      <li>
+        如何創造一個物件people，包含屬性name='小明'，方法say
+        能alert出自己名字<br />
+        <code
+          >people = { name:'小明', say:function(){ alert(this.name) } }</code
+        >
+      </li>
+      <li>
+        如何使用『字串模板』?變數在裡面需要用什麼包起來? <br />
+        使用 ` ` 符號 <br />
+        ${}
+      </li>
+      <li>
+        透過 jquery 什麼方法將 tbody清空<br />
+        $('tbody').empty()
+      </li>
+      <li>
+        透過 jquery 什麼方法將資料印上tbody <br />
+        $('tbody').append(row)
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>

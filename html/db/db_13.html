@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>多人聊天室</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-db/lessons/13/1"
+      ><h1>多人聊天室</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【說明】課程試玩</li>
+      <li>C.【講解】新增加入聊天室訊息</li>
+      <li>D.【講解】時間格式</li>
+      <li>E.【講解】隨機顏色分配</li>
+      <li>F.【講解】留言送出</li>
+      <li>G.【講解】使用Socket傳遞訊息</li>
+      <li>H.【講解】一次傳遞更多資訊</li>
+      <li>I.【講解】對話框捲動</li>
+      <li>J.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <ol>
+      <li>
+        運用到websocket的技術來實踐本課，而這邊可替學生加強複習的部分是在運用<br />
+        廣播socket.emit(“A”,xxxx)對應到的即時接收socket.on(“A”,xxxx)，<br />
+        也可以向學生解釋能把A視為一個通道，A廣播的只有A能接收到，因在往後兩個專案第14、15課，會有同時存在不同的廣播事件，而此課專案確實難度也不高，故在此希望學生能先釐清這個環節。
+      </li>
+      <li>
+        在本課有運用到鍵盤相對的keycode(enter->13)<br />
+        <a href="https://keycode.info">此網站</a>可提供查詢其他按鍵的keycode
+      </li>
+    </ol>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        時間物件-第9行<br />
+        如課程影片有多種輸出格式，在此需要特別注意的是，需要區分大小寫
+      </li>
+      <li>需將參數包成陣列，再用emit廣播-第12、32行</li>
+      <li>
+        而當on接受到後呼叫onMessage函式，再分別透過陣列取值方式將留言append到畫面上
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>

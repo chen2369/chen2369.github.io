@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>蒙蒂卡羅求 PI 與生命遊戲 </title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-al/lessons/15/1"
+      ><h1>蒙蒂卡羅求 PI 與生命遊戲 </h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【試玩】課程試玩：蒙蒂卡羅求PI</li>
+      <li>C.【講解】蒙地卡羅法</li>
+      <li>D.【講解】隨機產生紅點</li>
+      <li>E.【講解】繪製橘色的點</li>
+      <li>F.【講解】計算PI</li>
+      <li>G.【講解】生命遊戲介紹</li>
+      <li>H.【講解】繪製格子</li>
+      <li>I.【講解】計算細胞周圍個數</li>
+      <li>J.【講解】更新細胞</li>
+      <li>K.【講解】認識特殊的生物</li>
+      <li>L.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        (前半)在印出pi的時候因為網頁顯示的關係可能會印到看不到的地方，以我的電腦為例y座標改成以下會比較好：<br />
+        pen.drawRect(0, 150, 500, 50);<br />
+        print(a/(a+b)*4, 10, 160, 'black', 40);
+      </li>
+      <li>(後半)在update函式裡newGrid跟grid容易搞錯。</li>
+      <li>
+        forever函式裡drawText那兩行在完成時即可註解掉，影片裡似乎跳過了這段。
+      </li>
+      <li>
+        countCells函式的判斷式中有可能不是放布林值，但JS中undefined會作false使用，可能需要釐清一下：<a
+          href="https://ithelp.ithome.com.tw/articles/10103799"
+          >連結</a
+        >。
+      </li>
+      <li>
+        蒙地卡羅球pi專案如果不使用forever(loop)而是改用while來寫的話網頁會卡住。
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>

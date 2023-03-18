@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>迷宮產生器</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-al/lessons/6/1"
+      ><h1>迷宮產生器</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【試玩】課程試玩</li>
+      <li>C.【講解】繪製鑽洞機</li>
+      <li>D.【講解】操控挖洞機移動</li>
+      <li>E.【講解】移除牆壁</li>
+      <li>F.【講解】深度搜尋產生迷宮</li>
+      <li>G.【講解】取得周圍未挖通的格子</li>
+      <li>H.【講解】隨機挖洞前進</li>
+      <li>I.【講解】倒退移動</li>
+      <li>J.【講解】實驗時間</li>
+      <li>K.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <ol>
+      <li>
+        本專案生成迷宮的步驟:<br />
+        取得四個邊中未走過的(顏色為白色)存入陣列arr，並不超出邊界(x&lt;31;
+        y&lt;23)<br />
+        隨機取arr中一個方向移動<br />
+        移動時，去掉當下與移動後的相連牆壁<br />
+        塗上藍色
+      </li>
+      <li>了解上下左右的順序</li>
+    </ol>
+    <h2>問答</h2>
+    <h2>常見問題</h2>
+    <ol>
+      <li>
+        maze[x][y].top && maze[x][y - 1].color == 'lightblue'<br />
+        x或y在做加減1的地方非常容易寫錯，需多注意
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>

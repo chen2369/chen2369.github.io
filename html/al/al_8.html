@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>破解 1A2B</title>
+  </head>
+  <body>
+    <a href="https://koding.school/courses/javascript/dt-al/lessons/8/1"
+      ><h1>破解 1A2B</h1></a
+    >
+    <h2>課程章節</h2>
+    <ul>
+      <li>A.【說明】課程介紹</li>
+      <li>B.【試玩】課程試玩</li>
+      <li>C.【講解】答案的範圍</li>
+      <li>D.【講解】排除有重複數字的組合</li>
+      <li>E.【講解】隨機挑選答案</li>
+      <li>F.【講解】計算a</li>
+      <li>G.【講解】計算b</li>
+      <li>H.【講解】答對的文字訊息</li>
+      <li>I.【講解】暴力破解法</li>
+      <li>J.【講解】排除破解法</li>
+      <li>K.【課程回顧】</li>
+    </ul>
+    <h2>知識點</h2>
+    <h2>問答</h2>
+    <ol>
+      <li>請問一下,暴力破解法的方式是什麼?(就是一個一個將可能的數字去比對)</li>
+      <li>使用什麼指令可以讓它可以跑無窮迴圈呢?(//noprotect)</li>
+      <li>請問一下什麼是排除破解法?(就是將不相同的幾A幾B的數字移除掉)</li>
+    </ol>
+    <h2>常見問題</h2>
+    <ol>
+      <li>使用暴力破解法會沒有破解完成</li>
+      <li>
+        原來的程式碼是 :
+        <pre>
+        var list = getList();
+        //noprotect
+        for (var i = 0; i < list.length; i++) {
+            var g = list.pop();
+            var result = guess(g);
+            if (result.a == 4) {
+                break;
+            }
+            for (var j = 0; j < list.length; j++) {
+                var result2 = diff(list[j], g);
+                if (result.a != result2.a || result.b != result2.b) {
+                    list.splice(j, 1);
+                }
+            }
+        }
+        </pre>
+        後來改成這樣
+        <pre>
+        function crack () {
+            var list = getList();
+            //noprotect
+            for (var i = 0; i < 5040; i++) {
+                var g = list.pop();
+                var result = guess(g);
+                if (result.a == 4) {
+                    break;
+                }
+                for (var j = 0; j < list.length; j++) {
+                    var result2 = diff(list[j], g);
+                    if (result.a != result2.a || result.b != result2.b) {
+                    list.splice(j, 1);
+                    j--;
+                    }
+                }
+            }
+        }
+        </pre>
+      </li>
+    </ol>
+    <h2>延伸挑戰</h2>
+  </body>
+</html>
